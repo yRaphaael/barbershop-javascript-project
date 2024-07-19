@@ -1,0 +1,43 @@
+.sobre-nos .imagem-sobre-nos {
+  background: url('../assets/images/imagem_sobre_nos.png') 50% / cover no-repeat;
+  margin: 100px;
+  width: 100%;
+  height: 43.1rem;
+}
+
+.sobre-nos .titulo-sobre-nos {
+  margin: 0 0.1rem 2.1rem 0.1rem;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 3.4rem;
+  color: #FFFFFF;
+  background-color: red;
+}
+
+.sobre-nos .texto-sobre-nos {
+  text-align: justify;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.sobre-nos .container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.sobre-nos {
+  background: #151515;
+  display: flex;
+  flex-direction: row;
+  padding: 8.7rem 11.4rem 12.2rem 0;
+  width: 120rem;
+  box-sizing: border-box;
+  background-color: red;
+}

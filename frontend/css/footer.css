@@ -1,0 +1,61 @@
+.footer .logo-barbearia {
+  margin: 0 0rem 1.2rem 0rem;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'DM Serif Text';
+  font-weight: 400;
+  font-size: 3.4rem;
+  color: #000000;
+}
+.footer .redes-sociais-texto {
+  margin-bottom: 0.3rem;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.9rem;
+  color: #000000;
+}
+.footer .vector-3 {
+  width: 2rem;
+  height: 2rem;
+}
+.footer .icon-instagram-square {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  box-sizing: border-box;
+}
+.footer .vector {
+  width: 2rem;
+  height: 2rem;
+}
+.footer .icon-facebook-square-icon {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  box-sizing: border-box;
+}
+.footer .iconwhatsapp {
+  width: 2rem;
+  height: 2rem;
+}
+.footer .icones-redes-sociais {
+  margin: 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  column-gap: 1.6rem;
+  width: 9.1rem;
+  box-sizing: border-box;
+}
+.footer {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 2.2rem 0 12.5rem 8.4rem;
+  width: 120rem;
+  box-sizing: border-box;
+}
