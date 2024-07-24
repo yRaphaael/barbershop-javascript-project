@@ -1,428 +1,100 @@
-.servicos .image-3 {
-  background: linear-gradient(0deg, #151515, rgba(0, 0, 0, 0), #151515), url('../assets/images/image_3.png') 50% / cover no-repeat;
-  width: 100%;
-  height: 67.8rem;
-  margin-top: -5rem;
-  margin-left: -2.1rem;
-  position: absolute;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.servicos .nossos-servios {
+.servicos-page {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #151515)
+  ,linear-gradient(0deg, rgba(0, 0, 0, 0), #151515)
+  ,url('../assets/images/servicos_image.png');
+  display: flex;
   position: relative;
-  margin-bottom: 5.8rem;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'DM Serif Display';
+  width: 100%;
+  height: 100vh;
+  top: 32.3%;
+}
+
+.servicos-title {
+  color: #ffffffff;
+  position: absolute;
+  font-size: 54px;
+  font-weight: 600;
+  width: 620px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  margin-left: 50%;
+  margin-top: 3%;
+  transform: translateX(-50%);
+}
+
+.card-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  height: 500px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14%;
+  border-radius: 16px;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 30px;
+  background-color: #151515;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+}
+
+.content {
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 35px;
+  color: #ffffffff;
+  font-family: 'Inter';
+  font-weight: 200;
+  gap: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.content p {
+  font-size: 15px;
+  width: 350px;
+  margin-top: 10%;
+  position: relative;
   font-weight: 400;
-  font-size: 3.4rem;
-  color: #FFFFFF;
-}
-.servicos .imagem-corte-cabelo {
-  border-radius: 0.6rem;
-  background: url('../assets/images/imagem_corte_cabelo.png') 50% / cover no-repeat, linear-gradient(#D9D9D9, #D9D9D9);
-  margin: 0 0 1.3rem 0.3rem;
-  width: 27rem;
-  height: 15.3rem;
-}
-.servicos .titulo-corte-cabelo {
-  margin: 0 0 2.5rem 0.3rem;
-  display: inline-block;
-  overflow-wrap: break-word;
   font-family: 'Inter';
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #FFFFFF;
-}
-.servicos .tesoura-1 {
-  margin-right: 1.2rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .r-6 {
-  margin-right: 1.5rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .container-6 {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .preco-12 {
-  margin: 0 0.8rem 0.8rem 0.1rem;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .mquina-1 {
-  margin-right: 1.2rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .r-7 {
-  margin-right: 1.2rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .container-7 {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .preco-22 {
-  margin: 0 0.5rem 0.8rem 0.3rem;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .mquinatesoura-1 {
-  margin-right: 0.9rem;
   text-align: center;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: #FFFFFF;
+  color: #ffffffff;
 }
-.servicos .r-8 {
-  margin: 0 1.3rem 2.3rem 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .container-8 {
-  margin-bottom: 2.3rem;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .preco-32 {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .precos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .card-corpse-1 {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .card-corte-cabelo {
-  border-radius: 0.6rem;
-  background: #151515;
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  padding: 2.3rem 2rem 2.4rem 1.9rem;
-  box-sizing: border-box;
-}
-.servicos .imagem-corte-barba {
-  border-radius: 0.6rem;
-  background: url('../assets/images/imagem_corte_barba.png') 50% / cover no-repeat, linear-gradient(#D9D9D9, #D9D9D9);
-  margin: 0 0 1.3rem 0.3rem;
-  width: 27rem;
-  height: 15.3rem;
-}
-.servicos .titulo-corte-barba {
-  margin: 0 0 1.1rem 0.4rem;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #FFFFFF;
-}
-.servicos .tesoura {
-  margin-right: 1.2rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .r {
-  margin-right: 1.5rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .container {
-  margin-right: 0rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .preco-1 {
-  margin: 0 0.1rem 1.1rem 0.1rem;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .mquina {
-  margin-right: 1.2rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .r-1 {
-  margin-right: 1.2rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .container-1 {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .preco-2 {
-  margin: 0 0.3rem 1.1rem 0.3rem;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .mquinatesoura {
-  margin-right: 0.9rem;
-  text-align: center;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .r-2 {
-  margin: 0 1.3rem 2.3rem 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .container-2 {
-  margin-bottom: 2.3rem;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .preco-3 {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .card-corpse-2 {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .card-corte-barba {
-  border-radius: 0.6rem;
-  background: #151515;
-  display: flex;
-  flex-direction: column;
-  padding: 2.3rem 2rem 3.6rem 1.9rem;
-  box-sizing: border-box;
-}
-.servicos .imagem-escova {
-  border-radius: 0.6rem;
-  background: url('../assets/images/imagem_escova.png') 50% / cover no-repeat, linear-gradient(#D9D9D9, #D9D9D9);
-  margin-bottom: 1.3rem;
-  width: 27rem;
-  height: 15.3rem;
-}
-.servicos .titulo-escova {
-  margin-bottom: 3.7rem;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #FFFFFF;
-}
-.servicos .cabelo-curto {
-  margin-right: 1.5rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .r-3 {
-  margin-right: 1.5rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .container-3 {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .preco-11 {
-  margin: 0 0.2rem 1.1rem 0rem;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .cabelo-mdio {
-  margin-right: 1.2rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .r-4 {
-  margin-right: 1.2rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .container-4 {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .preco-21 {
-  margin-bottom: 1.1rem;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .cabelo-longo {
-  margin-right: 1.3rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .r-5 {
-  margin-right: 1.3rem;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .container-5 {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 600;
-  font-size: 1.9rem;
-  color: #FFFFFF;
-}
-.servicos .preco-31 {
-  margin: 0 0.3rem 0 0rem;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .precos-1 {
-  margin-left: 0rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .card-corpse {
-  margin: 0 0rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.servicos .card-escova {
-  border-radius: 0.6rem;
-  background: #151515;
-  display: flex;
-  flex-direction: column;
-  padding: 2.3rem 2rem 3.3rem 2.3rem;
-  box-sizing: border-box;
-}
-.servicos .container {
+
+.content button {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  column-gap: 5.9rem;
-  width: fit-content;
-  box-sizing: border-box;
+  margin-top: 10%;
+  font-size: 1rem;
+  width: 200px;
+  height: 50px;
+  font-weight: 600;
+  border-radius: 16px;
+  border-style: none;
+  color: #ffffffff;
+  background-color: #FE6601;
+  cursor: pointer;
 }
-.servicos {
-  background: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4.3rem 7.2rem 15rem 7.2rem;
-  width: 120rem;
-  box-sizing: border-box;
+
+.content button:hover {
+  transition: 0.5s;
+  transform: scale(120%);
 }

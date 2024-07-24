@@ -1,146 +1,71 @@
-.home-page .home-image {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #151515), url('../assets/images/home_image.png') 50% / cover no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-}
-
-.home-page .logo-barbearia {
-  margin-right: 2vw;
-  width: 20vw;
-  overflow-wrap: break-word;
-  font-family: 'DM Serif Display';
-  font-weight: 400;
-  font-size: 3.4rem;
-  color: #FFFFFF;
-}
-
-.home-page .agendar,
-.home-page .sobre,
-.home-page .servios,
-.home-page .localizao {
-  margin-right: 1.3vw;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #FFFFFF;
-}
-
-.home-page .container {
-  margin: 1.4rem 0;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-}
-
-.home-page .nav-menu {
-  position: relative;
-  margin: 0 0 20.9rem 3.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.home-text-sub242 {
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 4vw;
-  line-height: 1.333;
-}
-
-.home-text {
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 4vw;
-  line-height: 1.333;
-}
-
-.home-page .home-text {
-  position: relative;
-  margin-bottom: 1.5rem;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 4vw;
-  color: #FFFFFF;
-}
-
-.home-page .agendar-agora {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 2.5rem;
-  color: #FFFFFF;
-}
-
-.home-page .button-click {
-  border-radius: 1rem;
-  border: 0.2rem solid #FFFFFF;
-  position: relative;
-  margin-right: auto;
-  display: flex;
-  align-self: center;
-  padding: 1.6rem 0;
-  width: 60%;
-  box-sizing: border-box;
-  justify-content: center;
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 .home-page {
-  background: #2D2D2D;
-  display: flex;
-  flex-direction: column;
-  padding: 2.1rem 5.1rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #151515), url('../assets/images/home_image.png');
+  display: inline-block;
+  position: absolute;
   width: 100%;
-  box-sizing: border-box;
-  min-height: 100vh;
+  height: 100vh;
 }
 
-
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-  .home-page .logo-barbearia {
-    width: 30vw;
-    font-size: 2.5rem;
-  }
-  .home-page .nav-menu {
-    flex-direction: column;
-    margin: 0;
-  }
-  .home-page .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .home-text-sub242, .home-text {
-    font-size: 6vw;
-  }
-  .home-page .home-text {
-    font-size: 6vw;
-  }
-  .home-page .button-click {
-    width: 80%;
-    margin: 2rem auto;
-  }
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-@media (max-width: 480px) {
-  .home-page .logo-barbearia {
-    width: 40vw;
-    font-size: 2rem;
-  }
-  .home-page .nav-menu {
-    width: 100%;
-    justify-content: center;
-  }
-  .home-page .button-click {
-    width: 90%;
-  }
+.barbershop-logo {
+  font-weight: 400;
+  font-size: 55.5px;
+  width: 250px;
+  margin: 32px;
+  font-family: 'DM Serif Display';
+  color: #fff;
+}
+
+.nav-menu-link {
+  font-family: 'Inter';
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.home-text {
+  position: relative;
+  font-size: 55px;
+  width: 900px;
+  margin-left: 5%;
+  margin-top: 6%;
+  color: #fff;
+}
+
+.home-text .home-text-1 {
+  font-weight: lighter;
+}
+
+.home-text-2 {
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.schedule-button {
+  width: 450px;
+  height: 100px;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 16px 1rem;
+  border-color: #fff;
+  color: #fff;
+  margin-left: 12%;
+  margin-top: 2%;
+  cursor: pointer;
 }
