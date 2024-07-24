@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* Página de localização */
@@ -34,7 +35,7 @@
   height: 60%;
   margin-top: 5%;
   position: relative;
-  right: 25%;
+  right: 16%;
   transform: translateX(-25%);
   font-family: 'Inter';
 }
@@ -57,4 +58,15 @@
 
 .filial span {
   font-size: 25px;
+}
+
+.map {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15%;
+  left: 60%;
+  transform: translateX(-50%);
+
 }
