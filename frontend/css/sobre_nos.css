@@ -21,7 +21,7 @@
   display: flex;
   box-sizing: border-box;
   position: relative;
-  top: 32.3%; /* Ajustar conforme necessário para alinhar */
+  top: 32.3%;
 }
 
 .sobre-nos-image {
@@ -49,4 +49,39 @@
   font-size: 54px;
   position: absolute;
   margin-left: 44%;
+}
+
+@media (min-width: 313px) and (max-width: 1024px) {
+
+  .sobre-nos-page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .sobre-nos-image {
+    display: none; 
+  }
+
+  .sobre-nos-title {
+    width: fit-content; 
+    text-align: center; 
+    height: fit-content; 
+    margin: 0; 
+    margin-bottom: 10%;
+    position: relative;
+    font-size: 35px;
+  }
+
+  .sobre-nos-text {
+    width: 90%; 
+    height: fit-content; 
+    font-size: 15px; 
+    text-align: justify; 
+    margin: 0; 
+  }
 }

@@ -5,9 +5,9 @@
 }
 
 .servicos-page {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #151515)
-  ,linear-gradient(0deg, rgba(0, 0, 0, 0), #151515)
-  ,url('../assets/images/servicos_image.png');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #151515),
+              linear-gradient(0deg, rgba(0, 0, 0, 0), #151515),
+              url('../assets/images/servicos_image.png');
   display: flex;
   position: relative;
   width: 100%;
@@ -16,7 +16,7 @@
 }
 
 .servicos-title {
-  color: #ffffffff;
+  color: #ffffff;
   position: absolute;
   font-size: 54px;
   font-weight: 600;
@@ -29,17 +29,22 @@
   transform: translateX(-50%);
 }
 
+.all-cards {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: fit-content;
+  margin-top: 10%;
+}
+
 .card-container {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: center;
   max-width: 1200px;
   height: 500px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 14%;
   border-radius: 16px;
+  margin: 0 auto; 
 }
 
 .card {
@@ -62,7 +67,7 @@
 
 .content h2 {
   font-size: 35px;
-  color: #ffffffff;
+  color: #ffffff;
   font-family: 'Inter';
   font-weight: 200;
   gap: 10px;
@@ -72,13 +77,13 @@
 
 .content p {
   font-size: 15px;
-  width: 350px;
+  width: fit-content;
   margin-top: 10%;
   position: relative;
   font-weight: 400;
   font-family: 'Inter';
   text-align: center;
-  color: #ffffffff;
+  color: #ffffff;
 }
 
 .content button {
@@ -90,7 +95,7 @@
   font-weight: 600;
   border-radius: 16px;
   border-style: none;
-  color: #ffffffff;
+  color: #ffffff;
   background-color: #FE6601;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -98,4 +103,69 @@
 
 .content button:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+
+  .servicos-page {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .servicos-title {
+    font-size: 30px; 
+    display: block;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    text-align: center;
+    transform: translateX(0%);
+    height: fit-content;
+    top: 5%;
+  }
+
+  .all-cards {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 30%;
+  }
+
+  .card-container {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 15px; 
+    width: 100%; 
+    margin: 0 auto; 
+  }
+
+  .card {
+    width: 90%; 
+    max-width: 400px; 
+  }
+
+  .content h2 {
+    font-size: 28px; 
+  }
+
+  .content p {
+    font-size: 14px; 
+  }
+
+  .content button {
+    width: 180px; 
+    height: 45px; 
+    font-size: 0.9rem; 
+  }
 }

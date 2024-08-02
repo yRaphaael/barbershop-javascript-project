@@ -1,12 +1,11 @@
 /* Footer */
 footer {
-    background-color: white;
+    background-color: #fff;
     color: #000;
     padding: 20px 0;
     text-align: center;
     position: relative;
-    margin-top: 16%;
-    min-height: 200px;    
+    min-height: 200px;
   }
   
   .footer-content {
@@ -56,12 +55,17 @@ footer {
   .footer-link:hover {
     text-decoration: underline;
   }
+
+  .copyright-text {
+    font-family: "Inter";
+    font-size: 10px;
+  }
   
   /* Responsividade */
-  @media (max-width: 768px) {
+  @media (min-width: 313px) and (max-width: 1024px) {
     .footer-content {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
     }
   
     .footer-list {

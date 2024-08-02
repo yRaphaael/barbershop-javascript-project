@@ -10,43 +10,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   width: 100%;
   height: 100vh;
   background-color: #151515;
-  top: 32.3%;
+  position: relative;
 }
+
 
 /* Título da localização */
 .localizacao-title {
   font-size: 54px;
   font-weight: 600;
-  width: fit-content;
-  height: fit-content;
-  margin-top: 20px;
+  width: 100%;
+  text-align: center;
   color: #fff;
+  margin-top: 20px;
 }
 
 /* Contêiner das filiais */
 .filiais-container {
-  display: flex;
-  flex-direction: column;
-  width: fit-content; /* Ajuste conforme necessário */
-  height: 60%;
-  margin-top: 5%;
   position: relative;
-  right: 16%;
-  transform: translateX(-25%);
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 2.5%;
   font-family: 'Inter';
+  display: flex;
+  right: 30%;
 }
 
 /* Cada filial */
 .filial {
   color: #fff;
   padding: 20px;
-  margin-bottom: 50px; /* Espaçamento entre filiais */
+  margin-bottom: 50px;
+  width: 100%;
 }
-
 .filial h3 {
   margin-bottom: 10px;
   font-size: 30px;
@@ -60,13 +59,75 @@
   font-size: 25px;
 }
 
+/* Mapa */
 .map {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 60vh;
   top: 15%;
-  left: 60%;
-  transform: translateX(-50%);
+  left: 0; 
+  transform: translateX(0); 
+}
 
+@media (min-width: 313px) and (max-width: 1024px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .localizacao-page {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .localizacao-title {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .filiais-container {
+    width: 100%;
+    height: fit-content;
+    right: 0;
+  }
+
+  .filial {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: -5%;
+  }
+
+  .filial h3 {
+    font-size: 20px;
+  }
+
+  .filial span {
+    font-size: 18px;
+  }
+
+  .filial p {
+    font-size: 15px;
+  }
+
+  .map {
+    top: 0;
+    position: relative;
+  }
+
+  .map iframe{
+    max-width: 350px;
+    max-height: 250px;
+  }
 }

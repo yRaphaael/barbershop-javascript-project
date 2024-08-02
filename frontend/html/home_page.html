@@ -24,49 +24,59 @@
 
 <body>
   <!-- Home Page -->
-  <div class="home-page">
-    <div class="nav-menu">
-      <h1 class="barbershop-logo">
-        CorteFino
-      </h1>
-      <div class="nav-menu-options">
-        <a href="" class="nav-menu-link">agendar</a>
-        <a href="#sobre-nos-page-id" class="nav-menu-link">sobre</a>
-        <a href="#servicos-page-id" class="nav-menu-link">serviços</a>
-        <a href="#localizacao-page-id" class="nav-menu-link">localização</a>
-      </div>
-    </div>
+  <section class="home-page" id="home-page-id">
+
+    <header class="header">
+      <nav class="nav">
+        <a href="#home-page-id" class="barbershop-logo">CorteFino</a>
+        <button class="hamburguer"></button>
+        <ul class="nav-list">
+          <li><a href="#">agendar</a></li>
+          <li><a href="#sobre-nos-page-id">sobre</a></li>
+          <li><a href="#servicos-page-id">serviços</a></li>
+          <li><a href="#localizacao-page-id">localização</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="home-text">
       <h2 class="home-text-1">A aparência de um homem<span class="home-text-2"><br />fala muito sobre ele.</span></h2>
     </div>
     <button type="button" class="schedule-button">
       Agendar agora!
     </button>
+  </section>
 
-    <!-- Sobre nós -->
-    <div class="sobre-nos-page" id="sobre-nos-page-id">
-      <img class="sobre-nos-image" src="../assets/images/imagem_sobre_nos.png">
-      <h1 class="sobre-nos-title">
-        Sobre nós
-      </h1>
-      <p class="sobre-nos-text">
-        Fundada em 2010, nossa barbearia nasceu de uma paixão pela arte do corte e do cuidado com a barba. Desde então,
-        nos dedicamos a criar um ambiente acolhedor e estiloso, onde cada detalhe é pensado para garantir que você se
-        sinta bem atendido e valorizado.<br />
-        <br />
-        A história da CorteFino começou com um sonho: trazer de volta a essência das antigas barbearias, onde o cuidado
-        e a atenção aos detalhes eram prioridades. Inspirados pelas técnicas clássicas e pela sofisticação dos mestres
-        barbeiros de antigamente, combinamos essa tradição com as tendências modernas para atender aos homens que
-        valorizam tanto o estilo quanto a qualidade.
-      </p>
-    </div>
+  <!-- Sobre nós -->
+  <section class="sobre-nos-page" id="sobre-nos-page-id">
+    <img class="sobre-nos-image" src="../assets/images/imagem_sobre_nos.png">
+    <h1 class="sobre-nos-title">
+      Sobre nós
+    </h1>
+    <p class="sobre-nos-text">
+      Fundada em 2010, nossa barbearia nasceu de uma paixão pela arte do corte e do cuidado com a barba. Desde então,
+      nos dedicamos a criar um ambiente acolhedor e estiloso, onde cada detalhe é pensado para garantir que você se
+      sinta bem atendido e valorizado.<br />
 
-    <!-- Nossos serviços -->
-    <div class="servicos-page" id="servicos-page-id">
-      <h1 class="servicos-title">
-        Serviços que provemos
-      </h1>
+      <br />A história da CorteFino começou com um sonho: trazer de volta a essência das antigas barbearias, onde o
+      cuidado e
+      a atenção aos detalhes eram prioridades. Inspirados pelas técnicas clássicas e pela sofisticação dos mestres
+      barbeiros de antigamente, combinamos essa tradição com as tendências modernas para atender aos homens que
+      valorizam tanto o estilo quanto a qualidade.<br />
 
+      <br />Além dos serviços de corte e barba, também oferecemos tratamentos de cuidado com a pele e massagens
+      relaxantes,
+      tudo para que você possa sair daqui renovado e revitalizado. Estamos sempre atentos às novas tendências e técnicas
+      para garantir que nossos clientes tenham acesso ao que há de melhor no mundo da barbearia.
+    </p>
+  </section>
+
+  <!-- Nossos serviços -->
+  <section class="servicos-page" id="servicos-page-id">
+    <h1 class="servicos-title">
+      Serviços que provemos
+    </h1>
+    <div class="all-cards">
       <div class="card-container">
         <div class="card">
           <div class="content">
@@ -104,120 +114,123 @@
         </div>
       </div>
     </div>
-    <!-- Localização -->
-    <div class="localizacao-page" id="localizacao-page-id">
-      <h2 class="localizacao-title">
-        Onde estamos localizados
-      </h2>
-      <div class="filiais-container">
-        <div class="filial">
-          <div class="filial-content">
-            <h3>
-              Nome da filial 1
-            </h3>
-            <span>
-              seu endereço, 2024
-            </span>
-            <p>
-              seu ponto de referencia
-            </p>
-          </div>
-        </div>
-        <div class="filial">
-          <div class="filial-content">
-            <h3>
-              Nome da filial 2
-            </h3>
-            <span>
-              seu endereço, 2024
-            </span>
-            <p>
-              seu ponto de referencia
-            </p>
-          </div>
-        </div>
-        <div class="filial">
-          <div class="filial-content">
-            <h3>
-              Nome da filial 3
-            </h3>
-            <span>
-              seu endereço, 2024
-            </span>
-            <p>
-              seu ponto de referencia
-            </p>
-          </div>
+
+  </section>
+  <!-- Localização -->
+  <section class="localizacao-page" id="localizacao-page-id">
+    <h2 class="localizacao-title">
+      Onde estamos localizados
+    </h2>
+    <div class="filiais-container">
+      <div class="filial">
+        <div class="filial-content">
+          <h3>
+            Nome da filial 1
+          </h3>
+          <span>
+            seu endereço, 2024
+          </span>
+          <p>
+            seu ponto de referencia
+          </p>
         </div>
       </div>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7901.428515553!2d-34.95950355568123!3d-8.02836959428042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1a2ba2906203%3A0x68ba483d67255f36!2sCaxang%C3%A1%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1721829225169!5m2!1spt-BR!2sbr"
-          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="filial">
+        <div class="filial-content">
+          <h3>
+            Nome da filial 2
+          </h3>
+          <span>
+            seu endereço, 2024
+          </span>
+          <p>
+            seu ponto de referencia
+          </p>
+        </div>
+      </div>
+      <div class="filial">
+        <div class="filial-content">
+          <h3>
+            Nome da filial 3
+          </h3>
+          <span>
+            seu endereço, 2024
+          </span>
+          <p>
+            seu ponto de referencia
+          </p>
+        </div>
       </div>
     </div>
-
-<!-- Footer -->
-<footer>
-  <div class="footer-content">
-    <div class="footer-contacts">
-      <h1>CorteFino</h1>
-      <div id="footer-social-media">
-        <a href="#" class="footer-link" id="instagram">
-          <img src="../assets/vectors/vector_1_x2.svg" alt="" width="30">
-        </a>
-        <a href="#" class="footer-link" id="whatsapp">
-          <img src="../assets/vectors/iconwhatsapp_x2.svg" alt="" width="30">
-        </a>
-        <a href="#" class="footer-link" id="facebook">
-          <img src="../assets/vectors/vector_x2.svg" alt="" width="30">
-        </a>
-      </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7901.428515553!2d-34.95950355568123!3d-8.02836959428042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1a2ba2906203%3A0x68ba483d67255f36!2sCaxang%C3%A1%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1721829225169!5m2!1spt-BR!2sbr"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <ul class="footer-list">
-      <li>
-        <h3>Link</h3>
-      </li>
-      <li><a href="#sobre-nos-page-id" class="footer-link">sobre</a></li>
-      <li><a href="#servicos-page-id" class="footer-link">serviços</a></li>
-      <li><a href="#localizacao-page-id" class="footer-link">localização</a></li>
-    </ul>
-    <ul class="footer-list">
-      <li>
-        <h3>Suporte</h3>
-      </li>
-      <li><a href="#" class="footer-link">FAQ</a></li>
-      <li><a href="#" class="footer-link">como funciona</a></li>
-      <li><a href="#" class="footer-link">Contato</a></li>
-    </ul>
-    <ul class="footer-list">
-      <li>
-        <h3>Nos contate!</h3>
-      </li>
-      <li>
-        <p>(81)901234-5678</p>
-      </li>
-      <li>
-        <p>emaildaempresa@gmail.com</p>
-      </li>
-      <li>
-        <p>Brasil</p>
-      </li>
-    </ul>
-  </div>
-</footer>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contacts">
+        <h1>CorteFino</h1>
+        <div id="footer-social-media">
+          <a href="#" class="footer-link" id="instagram">
+            <img src="../assets/vectors/vector_1_x2.svg" alt="" width="30">
+          </a>
+          <a href="#" class="footer-link" id="whatsapp">
+            <img src="../assets/vectors/iconwhatsapp_x2.svg" alt="" width="30">
+          </a>
+          <a href="#" class="footer-link" id="facebook">
+            <img src="../assets/vectors/vector_x2.svg" alt="" width="30">
+          </a>
+        </div>
+        <span class="copyright-text">&copy;Victor Raphael</span>
+      </div>
+      <ul class="footer-list">
+        <li>
+          <h3>Link</h3>
+        </li>
+        <li><a href="#sobre-nos-page-id" class="footer-link">sobre</a></li>
+        <li><a href="#servicos-page-id" class="footer-link">serviços</a></li>
+        <li><a href="#localizacao-page-id" class="footer-link">localização</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h3>Suporte</h3>
+        </li>
+        <li><a href="#" class="footer-link">FAQ</a></li>
+        <li><a href="#" class="footer-link">como funciona</a></li>
+        <li><a href="#" class="footer-link">Contato</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h3>Nos contate!</h3>
+        </li>
+        <li>
+          <p>(81)901234-5678</p>
+        </li>
+        <li>
+          <p>emaildaempresa@gmail.com</p>
+        </li>
+        <li>
+          <p>Brasil</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 
-    <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
-    <script>
-      VanillaTilt.init(document.querySelectorAll(".card"), {
-        max: 25,
-        speed: 300,
-        glare: true,
-        "max-glare": 0.3
-      });
-    </script>
+  <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 300,
+      glare: true,
+      "max-glare": 0.3
+    });
+  </script>
+  <script src="../js/navbar-bubble-animation.js"></script>
 </body>
 
 </html>
